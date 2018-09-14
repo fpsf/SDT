@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="bean1" class="ex1.Bean1">
+        <property name="id" value="01" />
+        <property name="txt1" value="tudo" />
+        <property name="txt2" value="bem" />
+        <property name="ref" ref="bean2"/>
+    </bean>
+
+    <bean id="bean2" class="ex1.Bean2">
+        <property name="id" value="02" />
+        <property name="txt1" value="tdb" />
+        <property name="txt2" value="e" />
+        <property name="txt3" value="ctg" />
+    </bean>
+
+</beans>
